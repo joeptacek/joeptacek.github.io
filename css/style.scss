@@ -15,7 +15,7 @@ body {
   font: 16px/1.2 sans-serif;
 }
 
-h1, p, img {
+h1, h2, p, ul, hr, img, nav {
   margin-top: 0;
   margin-bottom: 1rem;
   &:last-child {
@@ -23,11 +23,17 @@ h1, p, img {
   }
 }
 
-hr, section {
-  margin-bottom: 2rem;
-  &:last-child {
-    margin-bottom: 0;
-  }
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+  text-decoration: underline;
 }
 
 hr {
@@ -46,5 +52,23 @@ a {
   color: blue;
   &:hover {
     text-decoration: none;
+  }
+}
+
+#site-nav {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  padding-left: 0;
+
+  > li {
+    padding-right: 0.75rem;
+  }
+}
+
+.mb2 {
+  margin-bottom: 2rem;
+  &:last-child {
+    margin-bottom: 0;
   }
 }
