@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }} | Joe Ptacek</title>
+    <title>{{ page.title }} | Projects | Joe Ptacek</title>
     <meta name="description" content="Website for Joe Ptacek">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,6 +20,11 @@
     <h2 class="mb2">
        {{ page.title }} <span aria-hidden="true">→</span>
     </h2>
-    {{ content }}
+    <section class="mb2">
+      {{ content }}
+    </section>
+    <nav>
+      <a href="/projects"><span aria-hidden="true">←</span> Back to projects</a>
+    </nav>
   </body>
 </html>
