@@ -33,7 +33,6 @@ h2 {
 
 h3 {
   font-size: 1rem;
-  text-decoration: underline;
 }
 
 hr {
@@ -49,7 +48,7 @@ img {
 }
 
 a {
-  color: blue;
+  color: Blue;
   &:hover {
     text-decoration: none;
   }
@@ -61,9 +60,18 @@ a {
   list-style-type: none;
   padding-left: 0;
 
-  > li {
+  li {
     padding-right: 0.75rem;
   }
+
+  a {
+    font-weight: bold;
+  }
+}
+
+#breadcrumbs {
+  color: DimGrey;
+  margin-bottom: 0.5rem;
 }
 
 .mb2 {
@@ -71,4 +79,9 @@ a {
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.list-reset {
+  list-style-type: none;
+  padding-left: 0;
 }

@@ -6,25 +6,20 @@
     <meta name="description" content="Website for Joe Ptacek">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
   </head>
   <body>
     <h1>{{ site.title }}</h1>
-    <nav>
-      <ul id="site-nav">
-        <li><a href="/">About</a></li>
-        <li><a href="/projects/">Projects</a></li>
-      </ul>
-    </nav>
+    {% include site_nav.html %}
     <hr class="mb2">
+    <p id="breadcrumbs">
+       Projects/
+    </p>
     <h2 class="mb2">
        {{ page.title }} <span aria-hidden="true">→</span>
     </h2>
     <section class="mb2">
       {{ content }}
     </section>
-    <nav>
-      <a href="/projects"><span aria-hidden="true">←</span> Back to projects</a>
-    </nav>
   </body>
 </html>
